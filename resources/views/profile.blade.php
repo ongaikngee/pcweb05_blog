@@ -5,7 +5,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-3">
-                    <img class="rounded-circle" width="150" src="/storage/{{ $profile->image }}">
+                    <img class="rounded-circle" width="150" src="/{{ $profile->image }}">
                 </div>
                 <div class="col-md-9">
                     <h3>{{ $user->name }}</h3>
@@ -47,7 +47,7 @@
                         </div>
                         <div class="my-4">{{ $blog->content }}</div>
                         @if ($blog->image != null)
-                            <div><img height="200" src="storage/{{ $blog->image }}"></div>
+                            <div><img height="200" src="/{{ $blog->image }}"></div>
                         @endif
                         {{-- <div><a href="/updateblog">Update Blog</a></div>
                         --}}
