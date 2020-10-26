@@ -47,7 +47,7 @@
                         </div>
                         <div class="my-4">{{ $blog->content }}</div>
                         @if ($blog->image != null)
-                            <div><img height="200" src="Storage/{{ $blog->image }}"></div>
+                            <div><img height="200" src="storage/{{ $blog->image }}"></div>
                         @endif
                         {{-- <div><a href="/updateblog">Update Blog</a></div>
                         --}}

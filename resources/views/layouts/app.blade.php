@@ -88,7 +88,7 @@
         <div class="jumbotron jumbotron-fluid bg-primary">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-lg-3"><img width="150" src="{{ url('/images/logo.png') }}"></div>
+                    <div class="col-12 col-lg-3"><img width="150" src="{{ url('/images/Logo.png') }}"></div>
                     <div class="col-12 col-lg-9">
                         <h1 class="display-4">Blog-o-roma</h1>
                         <p class="lead">Rapidly gained popularity, with one million registered users in two months, 10 million in a year, and 1 billion as of June 2020.

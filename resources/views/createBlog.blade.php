@@ -37,6 +37,7 @@
                         <div class="form-group row"> --}}
                             <input  class="form-control" type="file" name="blogpic" id="blogpic">
                         </div>
+                    
 
                         <div class="form-group row">
                             <button type="submit" class="btn btn-primary">Blog this entry.</button>
