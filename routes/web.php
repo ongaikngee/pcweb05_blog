@@ -38,8 +38,3 @@ Route::get('/deleteblog/{id}', [App\Http\Controllers\BlogController::class, 'del
 Route::get('/updateblog/{id}', [App\Http\Controllers\BlogController::class, 'showBlog']);
 Route::post('/updateblog', [App\Http\Controllers\BlogController::class, 'updateBlog'])->name('blog.updateBlog');
 
-
-
-// Route::get('/updateblog', [App\Http\Controllers\BlogController::class, 'updateBlog']);
-
-// Route::post('/updateblog/{id}', [App\Http\Controllers\BlogController::class, 'updateBlog'])->name('blog.updateBlog');

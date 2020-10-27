@@ -39,7 +39,7 @@ class HomeController extends Controller
         $blogs = DB::table('users')
             ->leftJoin('blogs', 'users.id', '=', 'blogs.user_id')
             ->leftJoin('profiles', 'users.id', '=', 'profiles.user_id')
-            ->select(DB::raw('blogs.*, profiles.*,users.*, blogs.image as b_image, blogs.created_at as b_created'))
+            ->select(DB::raw('blogs.*, profiles.*,users.*, blogs.id as b_id, blogs.image as b_image, blogs.created_at as b_created'))
             ->orderBy('blogs.created_at','desc')
             ->get();
         return view('index',['blogs'=>$blogs,'user'=>$user->id]);

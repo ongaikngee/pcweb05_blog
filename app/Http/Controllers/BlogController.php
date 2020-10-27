@@ -19,10 +19,14 @@ class BlogController extends Controller
 
     public function createBlog()
     {
-        // $data = request()->validate([
-        //     'title' => 'required',
-        //     'content' => 'required',
-        // ]);
+        $data = request()->validate([
+            'title' => 'required',
+            'content' => 'required',
+            'blogpic'=> ['required','image'],
+
+        ]);
+
+
 
         $imagePath = request('blogpic')->store('uploads', 'public');
 
